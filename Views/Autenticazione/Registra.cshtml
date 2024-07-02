@@ -1,0 +1,35 @@
+﻿@page
+
+@model Palestra.Models.Persona
+
+@{
+    ViewData["Title"] = "Registra";
+}
+
+
+<html>
+<head>
+
+
+</head>
+
+<body>
+
+    <h1>Inserisci Prodotto</h1>
+
+    <form method="post" asp-controller="Persona" asp-action="Salvataggio">
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="text" class="form-control" asp-for=Email />
+        </div>
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control" asp-for=Password />
+        </div>
+       
+    </form>
+</body>
+</html>
+
+
+
